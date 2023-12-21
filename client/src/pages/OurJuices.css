@@ -1,0 +1,117 @@
+.our-juices-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.banner-our-juices {
+    position: relative;
+    background: linear-gradient(to right, orange 30%, green 50%);
+    text-align: center;
+    padding: 6px 0;
+    overflow: hidden;
+}
+
+.banner-our-juices::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    /*border-top: 20px solid white; /* The V-shape*/
+}
+
+.banner-our-juices h1 {
+    font-size: 40px;
+    margin: 0;
+    z-index: 1;
+    color: #fff;
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.column {
+    border-radius: 5px;
+    /*border: 2px solid gainsboro;*/
+    padding: 10px;
+    overflow: hidden;
+}
+
+.image-container, .title-container, .description-container {
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+.image-container {
+    background: gainsboro;
+}
+
+
+.title-container{
+    background: #0a7848;
+    color: #fff;
+    text-align: center;
+}
+
+
+.description-container {
+    background: #e08d18;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.juice-image {
+    width: 100%;      /* Updated width */
+    height: auto;
+    display: block;  /* This makes sure the margin auto centers the image */
+    margin: 0 auto;  /* Centers the image horizontally */
+    border-radius: 5px;
+}
+
+
+#social-media-col {
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+
+.vBanner {
+    width: 100%;
+    height: 50px;
+    background: #ff9806;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 100%);
+    margin-bottom: 1rem;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

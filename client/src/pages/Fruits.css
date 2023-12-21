@@ -1,0 +1,43 @@
+.fruits-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.fruits-grid-column {
+    border: 1px solid #b8b8b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.left-column {
+    border: 3px solid #0a7848; /* Specific border for the left column */
+}
+
+.single-column {
+    border: 1px solid #b8b8b8;
+    text-align: left;
+    padding: 25px;
+    margin: 8px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    color: black; /* Sets the text color to black */
+    font-weight: normal; /* Sets the font weight to normal */
+	font-size: 16px;
+}
+
+.fruits-grid-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+}
+
+@media (max-width: 768px) {
+    .fruits-container {
+        grid-template-columns: 1fr;
+    }
+}

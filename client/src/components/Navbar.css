@@ -1,0 +1,100 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: 'Catamaran', sans-serif;
+    width: 100%;  /* This will make the navbar span the full width */
+    /*border-bottom: 3px solid #ff9806;*/
+}
+
+.navbar-logo {
+    margin-right: auto;  /* Push the logo to the far left */
+}
+
+.navbar-logo img {
+    max-height: 100px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Allow it to take up remaining space */
+    align-items: center;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #0a7848;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 12px;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+.hamburger-icon::before {
+    content: '\2630'; /* Unicode for hamburger icon (three horizontal lines) */
+}
+
+/* Responsive styles for mobile */
+
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 80px; /* Adjust the top position as needed */
+        left: -100%;
+        width: 100%;
+        background-color: #f8f8f8;
+        transition: 0.5s;
+    }
+
+    .navbar.active .navbar-links {
+        left: 0;
+        margin-top: 18px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+
+    .menu-button {
+        background: none;
+        border: none;
+        font-size: 35px;
+        cursor: pointer;
+        outline: none;
+        color: #0a7848;
+    }
+
+    .menu-button:focus {
+        outline: none;
+    }
+}

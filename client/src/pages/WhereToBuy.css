@@ -1,0 +1,40 @@
+.where-to-buy-container {
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+  }
+  
+  .logo-container img {
+	max-width: 100px; /* Adjust size as needed */
+	margin: 0 auto;
+  }
+  
+  .header-container h2 {
+	border: 2px solid #0a7848; /* Adjust border color as needed */
+	border-radius: 10px;
+	display: inline-block; /* To apply border-radius correctly */
+	padding: 10px;
+	margin-top: 20px;
+  }
+  
+  .contact-info p {
+	margin-top: 20px;
+	line-height: 1.5;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+	.header-container h2 {
+	  font-size: 16px; /* Smaller font size for small screens */
+	  padding: 5px;
+	}
+  
+	.contact-info p {
+	  font-size: 14px;
+	}
+  
+	.logo-container img {
+	  max-width: 80px; /* Smaller logo for small screens */
+	}
+  }
+  

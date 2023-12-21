@@ -1,0 +1,69 @@
+/* src/OurStory.css */
+.ourStoryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.leftColumn {
+  position: relative;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-end-end-radius: 10%;
+  border: 4px solid orange;
+}
+
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Catamaran', sans-serif
+}
+
+.vBanner {
+  width: 100%;
+  height: 50px;
+  background: #e0e0e0; /* Change as desired */
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 100%);
+  margin-bottom: 1rem;
+  border-radius: 6px
+}
+
+.title {
+  font-size: 40px;
+}
+
+.description {
+  margin-top: 1.3rem;
+  text-align: left;
+  padding: 20px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ourStoryContainer {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .vBanner {
+    height: 30px;
+  }
+}

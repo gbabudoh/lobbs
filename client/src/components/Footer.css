@@ -1,0 +1,86 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+    font-size: 16px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#social-media-col {
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Align icons horizontally */
+}
+
+#social-media-col a .fa { 
+    color: white; /* Set social media icon color to white */
+    font-size: 24px; /* Adjust size if needed */
+    margin: 0 10px; /* Horizontal spacing between icons */
+}
+
+#links-col {
+    background-color: darkgreen;
+    color: white;
+}
+
+#links-col a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#info-col {
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#info-col a {
+    color: white;
+}
+
+#email-link {
+    color: #fff;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+    color: #fff;
+    margin: 20px;
+}
+
+.p-tel {
+    color: #fff;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

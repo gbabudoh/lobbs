@@ -1,0 +1,100 @@
+.page-wrapper {
+    /*max-width: 1200px; /* Matching the width of the footer */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;   
+}
+
+.contact-wrapper {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%; /* Ensures the container takes up the full width */
+    border: 1px solid gainsboro;
+    padding: 10px;
+}
+
+.contact-left,
+.contact-right {
+    width: 50%; 
+    box-sizing: border-box;
+}
+
+.contact-left {
+    border-right: 1px solid #a09999; 
+    padding-right: 10px; 
+}
+
+.contact-right {
+    padding-left: 10px; 
+}
+
+.logo-container {
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 9px; 
+    border-top-left-radius: 9px;
+   
+}
+
+.logo-container img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.info-container {
+    background-color: orange;
+    padding: 20px;
+    color: #fff;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+.popup {
+    background-color: orange;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 10;
+}
+
+
+
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        border-right: none; /* Remove the thin vertical line on mobile views */
+        padding-left: 0; /* Reset padding on mobile views */
+        padding-right: 0; /* Reset padding on mobile views */
+    }
+}
